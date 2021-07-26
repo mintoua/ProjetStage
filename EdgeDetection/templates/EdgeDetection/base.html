@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %} {% load i18n %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>{% block title %}Egde Detection (IED) {% endblock %}</title>
+    <meta property="og:type" content="website"> {% include "header.html" %} {% block site_css %} {% endblock site_css %}
+    <!--****************** style last added... ******************-->
+
+</head>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top shadow-lg navigation-clean navbar-inverse navbar-fixed-top" data-toggle="tooltip" data-bss-tooltip="" style="background-color: #0C4B33;" title="barre de navigation">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" style="padding:0px;margin-left:0px;height:78px;" href="#"> <img class="img-fluid" src={% static "assets/img/logo.png" %}></a><button data-toggle="collapse" class="navbar-toggler ml-5" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                        class="navbar-toggler-icon "></span></button></div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ml-auto" style="margin-top:13px;">
+                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:50" href="{% url 'home_view' %}" style="font-family: Roboto, sans-serif;">Home&nbsp;</a></li>
+                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:50" href="{% url 'download_view' %}" style="font-family: Roboto, sans-serif;">Download</a></li>
+                    <li class="nav-item"><a class="nav-link" uk-scroll="offset:50" style="font-family: Roboto, sans-serif;" href="{% url 'contact_view' %}">Contact&nbsp;</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    {% block globalContent %}
+    <!-- content of the page -->
+    {% endblock %}
+    <!-- Start: Footer Dark -->
+    {% include "footer.html" %} {% include 'common_js.html' %} {% block script %} {% endblock %}
+
+</body>
+</html>

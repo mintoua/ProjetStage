@@ -1,0 +1,125 @@
+{% extends 'base.html' %} {% load static %} {% block globalContent %}
+
+<div class="container banner" data-aos="fadeIn" data-aos-duration="4000" data-aos-easing="ease-in-out">
+    <div class="row">
+        <div class="safex col-lg-6 mt-5">
+            <h1><dt>IED</dt></h1>
+            <h3>Image Edge Detection</h3>
+            <h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, dolores? lskdflsmdf sdlfk! mlskdfsdfj msldkfsdfj sdlfkjsdf lksjdfsdfb smlksdfd mlksdf sdf sdlkfsdf </h6>
+            <button type="button" class="btn btn-success col-lg-3 col-sm-3 mt-3">Lire plus</button>
+        </div>
+        <div class="col-lg-6 mt-5">
+            <img src={% static "assets/img/hero-img.png" %} class="img-fluid bouncing-animation" alt="">
+        </div>
+    </div>
+
+</div>
+
+<section class="page-section mt-5" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Timeline</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <ul class="timeline" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <li>
+                <div class="timeline-image">
+                    <img class="rounded-circle img-fluid" src={% static "assets/img/1.jpg" %} alt="... "></div>
+                <div class="timeline-panel ">
+                    <div class="timeline-heading ">
+                        <h4>Septembre 2004 (eg)</h4>
+                        <h4 class="subheading ">Création de l'entreprise</h4>
+                    </div>
+                    <div class="timeline-body ">
+                        <p class="text-muted ">Septembre 2004 marque la création de Image Edge Detection(IED) et le début de l'aventure.
+
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="timeline-inverted ">
+                <div class="timeline-image "><img class="rounded-circle img-fluid " src={% static "assets/img/2.jpg" %} alt="... "></div>
+                <div class="timeline-panel ">
+                    <div class="timeline-heading ">
+                        <h4>Mars 2008 (eg)</h4>
+                        <h4 class="subheading ">Subtitle</h4>
+                    </div>
+                    <div class="timeline-body ">
+                        <p class="text-muted">Depuis <strong>Mars 2008, </strong> some text here</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image ">
+                    <img class="rounded-circle img-fluid " src={% static "assets/img/3.jpg" %} alt="... "></div>
+                <div class="timeline-panel ">
+                    <div class="timeline-heading ">
+                        <h4>1 er Novembre 2009 (eg)</h4>
+                        <h4 class="subheading ">Subtitle</h4>
+                    </div>
+                    <div class="timeline-body ">
+                        <p class="text-muted"><strong> IED</strong> some text here.. <strong> </strong> ...</p>
+                    </div>
+                </div>
+            </li>
+
+            <li class="timeline-inverted ">
+                <div class="timeline-image ">
+                    <h4>
+                        Faites
+                        <br> Partie du
+                        <br> Voyage
+                    </h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<section class="ftco-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="heading-section mb-5 pb-md-4">CAROUSEL</h2>
+            </div>
+            <div class="col-md-12">
+                <div class="hero featured-carousel owl-carousel owl-loaded owl-drag" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-2280px, 0px, 0px); transition: all 0s ease 0s; width: 7980px;">
+                            <div class="owl-item cloned" style="width: 1110px; margin-right: 30px;">
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-center justify-content-center" style="background-image:url(../../../static/assets/img/Photo-Lom-Pangar.jpg)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item cloned" style="width: 1110px; margin-right: 30px;">
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-center justify-content-center" style="background-image:url(../../../static/assets/img/chateau-deau-construit-à-NZianouan-par-le-PREMU.jpg)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item animated owl-animated-in fadeIn active" style="width: 1110px; margin-right: 30px;">
+                                <div class="item">
+                                    <div class="work">
+                                        <div class="img d-flex align-items-center justify-content-center" style="background-image:url(../../../static/assets/img/PREMU_Reunion-de-prise-de-contact-avec-le-Prefet-de-Tiassale.jpg)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span class="ion-ios-arrow-back"></span></button><button type="button" role="presentation" class="owl-next"><span class="ion-ios-arrow-forward"></span></button></div>
+                    <div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

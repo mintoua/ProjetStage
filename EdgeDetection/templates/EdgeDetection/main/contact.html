@@ -1,0 +1,40 @@
+{% extends 'base.html' %} {% load static %} {% block site_css %}
+<link rel="stylesheet" href="{% static 'assets/css/contact-us.css' %}"> {% endblock site_css %} {% block globalContent %}
+
+<section id="contact" data-aos="fade-in" data-aos-duration="1500" data-aos-easing="ease-in-out">
+    <div class="container">
+        <h2 class="text-center text-uppercase">Contact Us</h2>
+        <p class="text-center w-75 m-auto"> IED Developpers</p>
+
+        <div class="row " style="margin-top: 100px; margin-bottom: 100px;">
+            <div class="col">
+                <div class="card border-0">
+                    <div class="card-body text-center">
+                        <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+                        <h4 class="text-uppercase mb-5">call us</h4>
+                        <p>(216) 52432337</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0">
+                    <div class="card-body text-center">
+                        <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+                        <h4 class="text-uppercase mb-5">office location</h4>
+                        <address>B.P XXXX Tunis – Tunisie </address>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0">
+                    <div class="card-body text-center">
+                        <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+                        <h4 class="text-uppercase mb-5">email</h4>
+                        <p><a href=" mailto:tpkdmta@gmail.com"><span class="email">tpkdmta@gmail.com </span> </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

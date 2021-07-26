@@ -1,0 +1,28 @@
+.list-group-item-action {
+  text-indent: 10px;
+  margin: 10px;
+  margin-left: 5px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px 5px 5px;
+  border-width: 1px;
+  box-shadow: 1px 1px grey;
+  width: 520px;
+  height: 30px;
+  transition: height 0.5s,padding 0.5s;
+}
+
+.list-group-item-action:hover {
+  height: 70px;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.safex {
+  color: #2d825b;
+}
+
+.safex:hover {
+  text-decoration: none;
+}
+

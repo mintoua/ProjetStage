@@ -1,0 +1,17 @@
+{% load static %}
+{% load i18n %}
+<div class="footer-basic" style="background-color: rgb(237,237,237);">
+    <footer>
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                    class="icon ion-social-snapchat"></i></a><a href="#"><i
+                    class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
+        </div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="{% url 'home_view' %}">Accueil</a></li>
+            <li class="list-inline-item"><a href="{% url 'contact_view' %}">Contact</a></li>
+            <li class="list-inline-item"><a href="about.html">À propos</a></li>
+            <li class="list-inline-item"><a href="#">Politique de confidentialité</a></li>
+        </ul>
+        <p class="copyright" style="color: #2d825b;">IED © 2020</p>
+    </footer>
+</div>
