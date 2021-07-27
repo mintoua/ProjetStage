@@ -3,6 +3,9 @@
 {% block globalContent %}
 
 <div class="container text-sm-left" style="margin-left: 20px;display: flex;justify-content: center;margin-bottom: 50px;">
+    {% for post in file %}
+        <a href="{{post.adminupload.url}}" download="{{post.adminupload.url}}">Download</a>
+    {% endfor %}
 
 </div>
 
